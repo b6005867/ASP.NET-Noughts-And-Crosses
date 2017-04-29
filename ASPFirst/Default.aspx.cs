@@ -11,7 +11,7 @@ namespace ASPFirst
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
 
@@ -65,6 +65,24 @@ namespace ASPFirst
                 btn_start.Enabled = true;
                 btn_start.Text = "Start A New Game";
                 disableAllButtons();
+                if(ddl_player1Letter.SelectedValue == camp)
+                {
+                    int score=0;
+                    score = Convert.ToInt16(lbl_player1Score.Text);
+                    score += 1;
+                    lbl_player1Score.Text = score.ToString();
+                    ddl_player1Letter.Enabled = true;
+                    ddl_player2Letter.Enabled = true;
+                }
+                else
+                {
+                    int score = 0;
+                    score = Convert.ToInt16(lbl_player2Score.Text);
+                    score += 1;
+                    lbl_player2Score.Text = score.ToString();
+                    ddl_player1Letter.Enabled = true;
+                    ddl_player2Letter.Enabled = true;
+                }
             }
         }
 
@@ -206,7 +224,16 @@ namespace ASPFirst
 
         protected void btn_start_Click(object sender, EventArgs e)
         {
-            resetBoard();
+            if(ddl_player1Letter.SelectedValue != ddl_player2Letter.SelectedValue)
+            {
+                resetBoard();
+                ddl_player1Letter.Enabled = false;
+                ddl_player2Letter.Enabled = false;
+            }
+            else
+            {
+                lbl_message.Text = "Players have to choose different letters!";
+            }
         }
     }
 }

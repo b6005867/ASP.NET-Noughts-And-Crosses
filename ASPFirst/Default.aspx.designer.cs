@@ -13,6 +13,42 @@ namespace ASPFirst {
     public partial class _Default {
         
         /// <summary>
+        /// ddl_player1Letter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_player1Letter;
+        
+        /// <summary>
+        /// lbl_player1Score control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_player1Score;
+        
+        /// <summary>
+        /// ddl_player2Letter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_player2Letter;
+        
+        /// <summary>
+        /// lbl_player2Score control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_player2Score;
+        
+        /// <summary>
         /// btn_start control.
         /// </summary>
         /// <remarks>
